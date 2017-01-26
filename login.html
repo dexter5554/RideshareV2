@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="internal.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+
+	<title>rideshare</title>
+
+	<script type="text/javascript">
+
+function formValidation()  
+{  
+var uid = document.registration.UserID;  
+var passid = document.registration.UserPD;  
+if(userid_validation(uid,5,12))  
+{  
+
+if(passid_validation(passid,7,12))  
+{
+
+
+if(ValidateEmail(uemail))  
+{ 
+
+}
+}
+}
+}
+
+    function userid_validation(uid,mx,my)  
+    {  
+    var uid_len = uid.value.length;  
+    if (uid_len == 0 || uid_len >= my || uid_len < mx)  
+    {  
+    alert("User Id should not be empty / length be between "+mx+" to "+my);  
+    uid.focus();  
+    return false;  
+    }  
+    return true;  
+    }  
+
+
+    function passid_validation(passid,mx,my)  
+    {  
+    var passid_len = passid.value.length;  
+    if (passid_len == 0 ||passid_len >= my || passid_len < mx)  
+    {  
+    alert("Password should not be empty / length be between "+mx+" to "+my);  
+    passid.focus();  
+    return false;  
+    } 
+  
+    return true;  
+    }  
+
+
+    function ValidateEmail(uemail)  
+    {  
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+    if(uemail.value.match(mailformat))  
+    {  
+     
+    return true;  
+    }  
+    else  
+    {  
+    alert("You have entered an invalid email address!");  
+    uemail.focus();  
+    return false;  
+    }  
+    }
+	</script>
+</head>
+<body onload="document.registration.userid.focus();">
+<div class="base">
+<div class="logo">
+ <font class="name">Ride</font><font class="share">Share</font>
+ </div>
+ <div class="login_container">
+ <form name='registration' onSubmit="formValidation();" action="usr_home.html" >
+ 		<font class="na1">Enter Your Name:</font><br>
+		<input type="text" name="UserID" placeholder="Username"><br>
+		<font class="na1" >Password:</font><br>
+		<input type="Password" name="UserPD" placeholder="Password">
+		<br>
+		<input type="Submit" name="done" value="Login" onclick="ValidateEmail(document.registration.userid)" style=" margin-top:24px;">
+		</form>
+		<a href="SignUp.html" style=" text-decoration:none; color:white; margin-top:30px; margin-left:20px; float:left;">New User? SignUp</a>
+
+</div>
+</div>
+</body>
+</html>

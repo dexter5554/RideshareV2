@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="internal.css">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+
+	<title>rideshare Signup</title>
+	<style type="text/css">
+		input[type=time]
+	{
+	border-radius:3px;
+	border:none;
+	background-color: rgba(250, 250, 250, 0.9);
+	font-family: com;
+	padding: 4px 14px;
+	font-weight: 200;
+	margin: 5px;
+	height: 30px;
+	font-size: 22px;
+	width: 240px;
+	
+}
+	</style>
+</head>
+<body>
+<div class="base">
+<div class="logo">
+ <font class="name">Ride</font><font class="share">Share</font>
+ </div>
+ <div class="signup_container">
+ <form>
+ 		<font class="na1">Enter Vehicle No</font><br>
+		<input type="text" id="1" name="Vehicleno" placeholder="Vehicle Reg No." onclick="change()"><br>
+		<font class="na1" >Location Details:</font><br>
+		<input type="text" name="startloc" placeholder="From">
+		<input type="text" name="endloc" placeholder="to"><br>
+		<font class="na1" >Vehicle Model Name</font><br>
+		<input type="text" name="Vehiclename" placeholder="Model" >
+		<input type="radio" name="tryptype" value="Daily"> Daily<br>
+		<font class="na1">What time ?</font><br>
+		<input type="time" name="triptime" placeholder="00:00">
+		<input type="radio" name="tryptype" value="Weekly"> Weekly 
+		<input type="radio" name="tryptype" disabled="true"> Not Fixed<br>
+		<font class="na1">When do you plan to go?</font><br>		
+		<input type="date" format="dd/mm/yyyy" name="Dateoftrip" placeholder="start Date">
+		<input type="checkbox" name="car" value="yes">Yes i have passengers<br>
+		<font class="na1">How many People can You Take along ?</font><br>
+		<input type="text" name="pass_no" placeholder="Seats Available"><br>	
+
+
+
+		<input type="Submit" name="done" value="Done" style=" margin-top:24px;">
+		<a href="login.html" style=" text-decoration:none; color:white; margin-top:30px; margin-left:20px; float:left;">This is a Bug</a>
+</form>
+</div>
+</body>
+</html>

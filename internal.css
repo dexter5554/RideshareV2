@@ -1,0 +1,70 @@
+
+@font-face{
+	font-family:com;
+	src:url("./Assets/Fonts/PoiretOne-Regular.ttf");
+	
+}
+@font-face{
+	font-family: heading2;
+	src:url(./Assets/Fonts/Playball-Regular.ttf);
+
+}
+a{
+	text-decoration: none;
+	color: white;
+	
+}
+.design{
+	font-size: 40px;
+	color: red;
+	
+
+}
+body{
+	margin: 0;
+	padding: 0;
+	scroll:disabled;
+	animation-name: animatetop;
+    animation-duration: 1.5s;
+	font-family: com;
+}
+@keyframes animatetop{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+.base{
+	border:white;
+	min-height:625px !important;
+	height: auto;
+	margin: 1% 1% 1% 1%;
+	position: relative;
+	background-repeat: no-repeat;
+	border-style: solid;
+    border-width: 12px;
+    border-radius: 1.4px;
+	border-color:rgba(250, 250, 250, 0.9);
+	background-color: rgba(0,0,0,0.7);
+	width:96%;
+	overflow: auto;
+	
+}
+.name
+{
+	font-family: heading2;
+	color:rgba(250, 67, 87, 0.91);
+	font-weight:200;
+	font-style:italic;
+	font-size: 55px;
+	padding-left:14px;
+
+}
+.share
+{
+	font-family: com;
+	color:rgba(118, 255, 3, 0.84);
+	font-weight: 600;
+	font-size: 45px;
+	padding-left: 2px;
+
+}
+

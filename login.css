@@ -1,0 +1,97 @@
+.login_container
+{
+
+	float: right;
+	margin-right: 10px;
+	margin-top: -10px;
+	background-color: rgba(66, 66, 66, 0.1);
+	border: 1.5px solid white;
+	border-radius: 2px;
+	height: 210px;
+	width: 450px;
+	padding: 10px 8px;
+	font-family: com;
+	color: white;
+	font-weight: 600;
+	font-size: 18px;
+	animation-name: animatetop;
+    animation-duration: 2.3s;
+}
+@keyframes animatetop {
+    from {opacity:0}
+
+    to {opacity:1}
+}
+
+input[type=text]
+{
+	border-radius:3px;
+	border:none;
+	background-color: rgba(250, 250, 250, 0.9);
+	font-family: com;
+	padding: 4px 14px;
+	font-weight: 200;
+	height: 30px;
+	font-size: 22px;
+	width: 240px;
+	margin: 5px;
+
+
+}
+input[type=password]
+{
+	border-radius:3px;
+	border:none;
+	background-color: rgba(250, 250, 250, 0.9);
+	font-family: com;
+	padding: 4px 14px;
+	font-weight: 200;
+	margin: 5px;
+	height: 30px;
+	outline:none;
+	font-size: 22px;
+	width: 240px;
+}
+
+input[type=submit]
+{
+	padding: 4px 12px;
+	font-family: com;
+	font-size: 21px;
+	font-weight: 600;
+	float: right;
+	margin-right: 10px;
+	color: white;
+	width: 98px;
+	height: 39px;
+	border-radius: 2px;
+	outline: none;
+	border: solid 1.5px white; !important
+	border-radius: 2px;
+	transition-property: border;
+	transition-duration: 0.4s;
+	background-color: transparent;
+	background-color:rbga(0,0,0,0.3);
+}
+input[type=submit]:hover
+{
+	border: solid 1.3px green;
+	color: green;
+}
+.na1{
+	margin-top:10px;
+	margin-left: 10px;
+}
+body{
+			background:url(wacky4.jpg);
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+/*
+		
+		<font class="login_container_header_other">Password:</font><br>
+		<input type="Password" name="UserPD" placeholder="Password">
+		<br>
+		-->
+*/
